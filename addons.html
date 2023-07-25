@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+    <div class="page_wrap" id="addons_wrap">
+      <div class="page_container addons_page" id="addons_contain">
+        <div info_field>
+          <section class="addons_top">
+            <h2 class="addons_h2">Pick add-ons</h2>
+            <p class="page_p" id="kpi">Add-ons help enhace your gaming experience.</p>
+          </section>
+          <div class="list">
+             <section class="steps_sections">
+              <div class="page_number infos">1</div>
+              <p class="p1">STEP 1</p><br>
+              <p class="p2">YOUR INFO</p>
+             </section>
+ 
+             <section class="steps_sections">
+              <div class="page_number planos">2</div>
+              <p class="p1">STEP 2</p><br>
+              <p class="p2">SELECT PLAN</p>
+             </section>
+ 
+             <section class="steps_sections">
+              <div class="page_number adios" id="addons_number">3</div>
+              <p class="p1">STEP 3</p><br>
+              <p class="p2">ADD-ONS</p>
+             </section>
+
+             <style>
+              #addons_number{
+                background-color: aqua;
+                color: black;
+              }
+            </style>
+ 
+             <section class="steps_sections">
+              <div class="page_number sumos">4</div>
+              <p class="p1">STEP 4</p><br>
+              <p class="p2">SUMMARY</p>
+             </section>
+            </div>
+
+            <div class="addons_section">
+              <label>
+                <div class="addons_cont service">
+                  <input type="checkbox" name="service_check" class="service_check" onclick="selecto(service)">
+                  <p class="addon_service">Online services</p>
+                  <p class="service_note">Access to multiplayer games</p>
+                  <p class="addon_price online_price"></p>
+                </div>
+              </label>
+              <label>
+                <div class="addons_cont storage">
+                  <input type="checkbox" name="storage_check" class="storage_check" onclick="selecto(storage)">
+                  <p class="addon_service">Larger storage</p>
+                  <p class="service_note">Extra 1TB of cloud save</p>
+                  <p class="addon_price storage_price"></p>
+                </div>
+              </label>
+              
+              <label>
+                <div class="addons_cont profile">
+                  <input type="checkbox" name="profile_check" class="profile_check" onclick="selecto(profile)">
+                  <p class="addon_service">Customizable profile</p>
+                  <p class="service_note">Custom theme on your profile</p>
+                  <p class="addon_price profile_price"></p>
+                </div>
+              </label>
+              <button  class="next_btn addons_next" id="addons_next">Next Step</button>
+              <button  class="back_btn" id="addons_back">Go Back</button>
+              <div class="freet freeby arcade_yearly advance_yearly pro_yearly free_months switch change_btn plons plans_next arcade pro advance plans_error pot1 pot2 pot3 cost1 cost2 cost3 tots total amount chosen_plan chosen_price info_name info_email info_phone total_amount" id="plans_next" ></div>
+              <style>
+                .plons{display: none;}
+                .info_email{
+                  display: none;
+                }
+
+                .chek{
+                  display: none;
+                }
+              </style>
+              <div class="clones" id="plans_back"></div>
+              <div class="clones" id="summary_confirm"></div>
+              <div class="clones" id="thank_yall"></div><div class="clones" id="summary_confirm"></div>
+              <div id="input_p"></div>
+              <div id="name_p"></div>
+              <div id="phone_p"></div>
+              <div id="email_p"></div>
+              <input type="checkbox" name="chek" class="chek" id="summary_back">
+              <input type="text" class="info_email" id="plans_back">
+              <div class="plons" id="thank_yall"></div>
+              <div class="plons" id="summary_confirm"></div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <script src="index.js"></script>
+  </body>
+</html>
