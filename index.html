@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="page_wrap" id="index_wrap">
+      <div class="page_container">
+        <div class="info_field">
+          <h1>Personal Info</h1>
+          <p class="personal_p">please provide your name, email address and phone number.</p>
+          <div class="list">
+            <section class="steps_sections" id="step1">
+              <div class="page_number infos" id="info_number">1</div>
+              <p class="p1">STEP 1</p><br>
+              <p class="p2">YOUR INFO</p>
+             </section>
+
+             <style>
+              #info_number{
+                background-color: aqua;
+                color: black;
+              }
+            </style>
+ 
+             <section class="steps_sections">
+              <div class="page_number planos">2</div>
+              <p class="p1">STEP 2</p><br>
+              <p class="p2">SELECT PLAN</p>
+            </section>
+ 
+            <section class="steps_sections">
+             <div class="page_number adios">3</div>
+             <p class="p1">STEP 3</p><br>
+             <p class="p2">ADD-ONS</p>
+            </section>
+ 
+            <section class="steps_sections">
+             <div class="page_number sumos">4</div>
+             <p class="p1">STEP 4</p><br>
+             <p class="p2">SUMMARY</p>
+            </section>
+          </div>
+          <form class="form">
+            <p class="input_tag nayme">Name</p><br>
+            <p class="input_p valid_name" id="name_p">Enter your name</p>
+            <input type="text" placeholder="Please enter your name" class="info_name toputs"><br>
+
+            <p class="input_tag emale">Email address</p><br>
+            <p class="input_p valid_email" id="email_p">Enter a valid email</p>
+            <input type="text" placeholder="Please enter your name" class="info_email toputs"><br>
+
+            <p class="input_tag fone">Phone Number</p><br>
+            <p class="input_p valid_phone" id="phone_p">Enter a valid phone number</p>
+            <input type="text" placeholder="Please enter your name" class="info_phone toputs"><br>
+          </form>
+          <button class="next_btn" id="personal_next">Next Step</button>
+          
+          <div class="plon addons_next thank_you" id="summary_confirm"><input type="text" name="chek"></div>
+          <div class="plon" id="plans_next"></div>
+          <input name="chek" class="plon thank_you">
+
+          <div class="free_months freeby freet arcade_yearly advance_yearly advance_plan pro_yearly advance pro arcade info_name clones total_amount pot1 pot2 pot2 pot3 cost1 cost2 cost3 tots chosen_price change_btn chosen_plan addons_next profile_check storage_check service_check online_price storage_price profile_price" id="addons_next"></div>
+          <div class="clones" id="addons_back"></div>
+          <div class="clones" id="summary_back"></div>
+          <style>
+            #addons_next{display: none;}
+            .clones{
+              display: none;
+            }
+          </style>
+          <div class="clones" id="plans_back"></div>
+          <div class="clones" id="summary_confirm"></div>
+          <div class="clones" id="thank_yall"></div><div class="clones" id="summary_confirm"></div>
+          <style>
+            .plon{
+              display: none;
+            }
+          </style>
+          <!--  -->
+        </div>
+      </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ifarontimi</a>.
+    </div>
+  </body>
+</html>
